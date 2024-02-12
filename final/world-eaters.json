@@ -1,0 +1,140 @@
+[
+    {
+      "name": "Angron",
+      "limit": 1,
+      "cost": 415,
+      "image": "images/99120102152_AngronDaemonPrimarch1.jpg"
+    },
+    {
+        "name": "Khârn the Betrayer",
+        "limit": 1,
+        "cost": 100,
+        "image": "images/99120102184_WEKharnTheBetrayer01.jpg"
+    },
+    {
+        "name": "Lord Invocatus",
+        "limit": 1,
+        "cost": 140,
+        "image": "images/99120102155_WELordInvocatus01.jpg"
+    },
+    {
+        "name": "World Eaters Daemon Prince",
+        "limit": 3,
+        "cost": 200,
+        "image": "images/99120201130_S2DDaemonPrince04.jpg"
+    },
+    {
+        "name": "World Eaters Daemon Prince (with wings)",
+        "limit": 3,
+        "cost": 195,
+        "image": "images/99120201130_S2DDaemonPrince01.jpg"
+    },
+    {
+        "name": "World Eaters Lord on Juggernaut",
+        "limit": 3,
+        "cost": 100,
+        "image": "images/99120102155_WELordInvocatus02.jpg"
+    },
+    {
+        "name": "World Eaters Master of Executions",
+        "limit": 3,
+        "cost": 100,
+        "image": "images/99070102013_CSMMasterofExecutions01.jpg"
+    },
+    {
+        "name": "Jakhals",
+        "limit": 6,
+        "cost": 70,
+        "image": "images/99120102156_WEJakhals015.jpg"
+    },
+    {
+        "name": "Khorne Berzerkers",
+        "limit": 6,
+        "cost": 200,
+        "image": "images/99120102153_KhorneBerserkers1.jpg"
+    },
+    {
+        "name": "Eightbound",
+        "limit": 3,
+        "cost": 145,
+        "image": "images/99120102154_WEEightbound2.jpg"
+    },
+    {
+        "name": "Exalted Eightbound",
+        "limit": 3,
+        "cost": 160,
+        "image": "images/99120102154_ExhaltedEightbound2.jpg"
+    },
+    {
+        "name": "World Eaters Terminator Squad",
+        "limit": 3,
+        "cost": 190,
+        "image": "images/99120102097_CSMTerminators01.jpg"
+    },
+    {
+        "name": "World Eaters Chaos Spawn",
+        "limit": 3,
+        "cost": 65,
+        "image": "images/99120201050_ChaosSpawn01.jpg"
+    },
+    {
+        "name": "Khorne Lord of Skulls",
+        "limit": 3,
+        "cost": 450,
+        "image": "images/99120102041_LordofSkulls01.jpg"
+    },
+    {
+        "name": "World Eaters Defiler",
+        "limit": 3,
+        "cost": 190,
+        "image": "images/99120102013_CSMDefilerNEW_01.jpg"
+    },
+    {
+        "name": "World Eaters Forgefiend",
+        "limit": 3,
+        "cost": 145,
+        "image": "images/99120102089_CSMForgefiend01.jpg"
+    },
+    {
+        "name": "World Eaters Helbrute",
+        "limit": 3,
+        "cost": 140,
+        "image": "images/99120102043_CSMHelbrute01.jpg"
+    },
+    {
+        "name": "World Eaters Heldrake",
+        "limit": 3,
+        "cost": 210,
+        "image": "images/99120102090_CSMHeldrake01.jpg"
+    },
+    {
+        "name": "World Eaters Land Raider",
+        "limit": 3,
+        "cost": 240,
+        "image": "images/99120102052_CSMLandRaiderRepack01.jpg"
+    },
+    {
+        "name": "World Eaters Maulerfiend",
+        "limit": 3,
+        "cost": 155,
+        "image": "images/99120102089_CSMForgefiend02.jpg"
+    },
+    {
+        "name": "World Eaters Predator Annihilator",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/99120102012_ChaosPredator03.jpg"
+    },
+    {
+        "name": "World Eaters Predator Destructor",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/99120102012_ChaosPredator02.jpg"
+    },
+    {
+        "name": "World Eaters Rhino",
+        "limit": 3,
+        "cost": 75,
+        "image": "images/99120102092_CSMRhino01.jpg"
+    }
+]
