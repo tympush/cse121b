@@ -1,6 +1,6 @@
-const availableUnitsList = document.querySelector("#availableList");
-const userUnitsList = document.querySelector("#userList");
-const totalCostDisplay = document.querySelector("#totalCost");
+const availableUnitsList = document.querySelector(`#availableList`);
+const userUnitsList = document.querySelector(`#userList`);
+const totalCostDisplay = document.querySelector(`#totalCost`);
 let unitsData = [];
 let totalCost = 0;
 
@@ -8,7 +8,7 @@ let totalCost = 0;
 
 const getData = async () => {
 
-    const response = await fetch("world-eaters.json");
+    const response = await fetch(`world-eaters.json`);
     unitsData = await response.json();
     displayUnits(unitsData);
 }
@@ -18,26 +18,26 @@ const getData = async () => {
 const displayUnits = (units) => {
     units.forEach(unit => {
 
-        const article = document.createElement("article");
+        const article = document.createElement(`article`);
 
-        const h3name = document.createElement("h3");
+        const h3name = document.createElement(`h3`);
         h3name.textContent = unit.name;
 
-        const img = document.createElement("img");
+        const img = document.createElement(`img`);
         img.src = unit.image;
         img.alt = unit.name;
 
-        const h4limit = document.createElement("h4");
+        const h4limit = document.createElement(`h4`);
         h4limit.textContent = `Max: ${unit.limit}`;
 
-        const h4cost = document.createElement("h4");
+        const h4cost = document.createElement(`h4`);
         h4cost.textContent = unit.cost;
 
-        const button = document.createElement("input")
-        button.value = "+"
-        button.type = "button"
+        const button = document.createElement(`input`)
+        button.value = `+`
+        button.type = `button`
 
-        button.addEventListener("click", () => {
+        button.addEventListener(`click`, () => {
             addUserUnit(unit);
         });
 
@@ -62,7 +62,7 @@ const addUserUnit = (unit) => {
 
         if (existingUnit.value < unit.limit) {
             existingUnit.value++;
-            existingUnit.article.querySelector("#count").textContent = `x${existingUnit.value}`;
+            existingUnit.article.querySelector(`#count`).textContent = `x${existingUnit.value}`;
 
             totalCost += unit.cost;
             totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
@@ -74,35 +74,35 @@ const addUserUnit = (unit) => {
 
     } else {
 
-        const article = document.createElement("article");
+        const article = document.createElement(`article`);
 
-        const h3name = document.createElement("h3");
+        const h3name = document.createElement(`h3`);
         h3name.textContent = unit.name;
 
-        const img = document.createElement("img");
+        const img = document.createElement(`img`);
         img.src = unit.image;
         img.alt = unit.name;
 
-        const h4count = document.createElement("h4");
-        h4count.textContent = "x1"
-        h4count.id = "count"
+        const h4count = document.createElement(`h4`);
+        h4count.textContent = `x1`
+        h4count.id = `count`
         article.value = 1;
 
-        const h4cost = document.createElement("h4");
+        const h4cost = document.createElement(`h4`);
         h4cost.textContent = unit.cost;
 
-        const button = document.createElement("input")
-        button.value = "-"
-        button.type = "button"
+        const button = document.createElement(`input`)
+        button.value = `-`
+        button.type = `button`
 
-        button.addEventListener("click", () => {
+        button.addEventListener(`click`, () => {
             
             const existingUnit = findUserUnit(unit);
 
             if (existingUnit.value > 1) {
 
                 existingUnit.value--;
-                existingUnit.article.querySelector("#count").textContent = `x${existingUnit.value}`;
+                existingUnit.article.querySelector(`#count`).textContent = `x${existingUnit.value}`;
 
                 totalCost -= unit.cost;
                 totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
@@ -136,13 +136,13 @@ const addUserUnit = (unit) => {
 
 
 const findUserUnit = (unit) => {
-    const unitArticles = userUnitsList.querySelectorAll("article");
+    const unitArticles = userUnitsList.querySelectorAll(`article`);
     for (const unitArticle of unitArticles) {
-        const nameElement = unitArticle.querySelector("h3");
+        const nameElement = unitArticle.querySelector(`h3`);
         if (nameElement.textContent === unit.name) {
             return {
                 article: unitArticle,
-                value: parseInt(unitArticle.querySelector("#count").textContent.replace("x", ""))
+                value: parseInt(unitArticle.querySelector(`#count`).textContent.replace(`x`, ``))
             };
         }
     }
@@ -156,7 +156,7 @@ const changeBoxRed = (unit) => {
     const availableUnitArticle = findAvailableUnitArticle(unit);
 
     if (availableUnitArticle) {
-        availableUnitArticle.style.backgroundColor = "red";
+        availableUnitArticle.style.backgroundColor = `red`;
     }
 };
 
@@ -165,14 +165,14 @@ const changeBoxGrey = (unit) => {
     const availableUnitArticle = findAvailableUnitArticle(unit);
 
     if (availableUnitArticle) {
-        availableUnitArticle.style.backgroundColor = "#bbbbbb";
+        availableUnitArticle.style.backgroundColor = `#bbbbbb`;
     }
 };
 
 const findAvailableUnitArticle = (unit) => {
-    const unitArticles = availableUnitsList.querySelectorAll("article");
+    const unitArticles = availableUnitsList.querySelectorAll(`article`);
     for (const unitArticle of unitArticles) {
-        const nameElement = unitArticle.querySelector("h3");
+        const nameElement = unitArticle.querySelector(`h3`);
         if (nameElement.textContent === unit.name) {
             return unitArticle;
         }
